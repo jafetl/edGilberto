@@ -14,9 +14,12 @@ int main() {
   inserePosLista(&lista, 1, 2);
   inserePosLista(&lista, 2, 3);
   inserePosLista(&lista, 3, 4);
+  
 
   printf("O tamanho da lista e: %d\n", tamanhoLista (&lista));
   removePosLista(&lista, 1);
+  printf("Inserindo na posicao 2 o elemento 200, poderiamos inserir/modificar atraves desta funcao\n");
+  inserePosLista(&lista, 2, 200);
   printf("O tamanho da lista e: %d\n", tamanhoLista (&lista));
   imprimeLista(&lista);
   return 0;
